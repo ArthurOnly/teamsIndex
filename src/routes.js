@@ -8,7 +8,7 @@ export default function Routes(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path='/'>
+                <Route path='/:team'>
                     <MainPage/>
                 </Route>
             </Switch>

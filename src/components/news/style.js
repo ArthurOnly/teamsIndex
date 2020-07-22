@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     height: 300px;
-    width: ${props=>props.big ? '600px' : '300px'};
+    min-width: 300px;
+    flex-basis: 0;
+    flex-grow: ${props=>props.big ? 2 : 1};
     background-image: url(${props=>props.image});
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
+    margin: 10px;
 
     :hover{
         div:first-child{
@@ -23,8 +26,8 @@ export const Container = styled.div`
 `;
 
 export const Overlay = styled.div`
-    height: 300px;
-    width: ${props=>props.big ? '600px' : '300px'};
+    height: 100%;
+    width: 100%;
     background-color: rgba(0,0,0,0.3);
     transition: 0.2s;
     position: absolute;
