@@ -5,7 +5,7 @@ import {Container} from './style'
 function Footer() {
   return (
     <Container>
-      <h1>hi</h1>
+      <h1 style={{color: '#fff'}}>Em desenvolvimento</h1>
     </Container>
   )
 }

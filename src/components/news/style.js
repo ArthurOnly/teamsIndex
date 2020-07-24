@@ -40,6 +40,12 @@ export const Title = styled.h2`
     z-index: 2;
 `;
 
+export const Time = styled.h5`
+    color: #fff;
+    padding: 4px 8px 4px 8px;
+    z-index: 2;
+`
+
 export const IconsContainer = styled.div`
     position: absolute;
     left: -10px;
